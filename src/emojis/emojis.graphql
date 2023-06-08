@@ -1,0 +1,16 @@
+type Emoji {
+    code: String!,
+    char: String!,
+    name: String!,
+    category: String!,
+    group: String!,
+    subgroup: String!,
+  }
+
+type Query {
+  emoji(code: String!): Emoji
+}
+
+type Mutation {
+  updateEmoji(code: String!, char: String!): Emoji
+}
