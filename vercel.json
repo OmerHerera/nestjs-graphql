@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "name": "music-album",
+  "name": "nestjs-graphQL",
   "builds": [
-     { "src": "app.js", "use": "@vercel/node" }
-  ],
+     { 
+      "src": "main.ts", 
+     "use": "@vercel/node" 
+  }],
   "routes": [
-     { "src": "/(.*)", "dest": "/app.js" }
-  ]
+     { 
+      "src": "/(.*)", 
+     "dest": "/main.ts" 
+  }]
 }
