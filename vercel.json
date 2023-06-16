@@ -2,13 +2,10 @@
   "version": 2,
   "name": "nestjs-graphQL",
   "builds": [
-     { 
-      "src": "main.ts", 
-     "use": "@vercel/node" 
-  }],
+     { "src": "main.ts", "use": "@vercel/node"},
+     { "src": "dist/**/*.js", "use": "@vercel/node" }
+    ],
   "routes": [
-     { 
-      "src": "/(.*)", 
-     "dest": "/main.ts" 
-  }]
+    { "src": "/(.*)", "dest": "dist/index.js" }
+     ]
 }
