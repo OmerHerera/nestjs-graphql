@@ -31,3 +31,15 @@ type Query {
 type Mutation {
   updateEmoji(code: String!, char: String!): Emoji
 }
+
+
+# Using Fragments
+fragment emojiFields on Emoji {
+  code
+  char
+}
+
+fragment emojiAnimatedFields on EmojiAnimated {
+  animated
+  documentation
+}
