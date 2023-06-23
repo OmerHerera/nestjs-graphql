@@ -1,0 +1,45 @@
+type Emoji {
+    code: String!,
+    char: String!,
+    name: String!,
+    category: String!,
+    group: String!,
+    subgroup: String!,
+}
+
+type EmojiAnimated {
+    code: String!,
+    char: String!,
+    name: String!,
+    category: String!,
+    group: String!,
+    subgroup: String!,
+    animated: Boolean!
+    documentation: String!
+}
+
+union EmojiCollection = Emoji | EmojiAnimated
+
+type Query {
+  emoji(code: String!): Emoji
+}
+
+type Query {
+  emojiItems(code: String!): [EmojiCollection!]
+}
+
+type Mutation {
+  updateEmoji(code: String!, char: String!): Emoji
+}
+
+
+# Using Fragments
+fragment emojiFields on Emoji {
+  code
+  char
+}
+
+fragment emojiAnimatedFields on EmojiAnimated {
+  animated
+  documentation
+}

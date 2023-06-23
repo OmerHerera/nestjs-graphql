@@ -1,0 +1,29 @@
+[
+  {
+    "code": "1F600",
+    "char": "📔",
+    "name": "notebook with decorative cover",
+    "category": "Objects (book-paper)",
+    "group": "Objects",
+    "subgroup": "book-paper",
+    "documentation": "notebook with decorative cover"
+  },
+  {
+    "code": "1F4D5",
+    "char": "📕",
+    "name": "closed book",
+    "category": "Objects (book-paper)",
+    "group": "Objects",
+    "subgroup": "book-paper",
+    "documentation": "closed book"
+  },
+  {
+    "code": "1F4D6",
+    "char": "📖",
+    "name": "open book",
+    "category": "Objects (book-paper)",
+    "group": "Objects",
+    "subgroup": "book-paper",
+    "documentation": "open book"
+  }
+]
